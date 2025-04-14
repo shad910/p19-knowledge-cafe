@@ -15,13 +15,13 @@ function App() {
   const handleRemainingTime = (time, id) => {
     const newTime = remainingTime + time;
     setRemainingTime(newTime);
-    handleRemoveBookmark(id)
+    handleRemoveBookmark(id);
   };
 
- const handleRemoveBookmark = (id) => {
-    const updatedBookmark = bookmark.filter(book => book.id !== id);
+  const handleRemoveBookmark = (id) => {
+    const updatedBookmark = bookmark.filter((book) => book.id !== id);
     setBookmark(updatedBookmark);
- }
+  };
 
   return (
     <>
@@ -42,7 +42,9 @@ function App() {
               <h2 className="text-xl font-medium text-center">
                 Remaining Time: {remainingTime}
               </h2>
-              <h2 className="text-xl font-medium text-center">Bookmark: {bookmark.length}</h2>
+              <h2 className="text-xl font-medium text-center">
+                Bookmark: {bookmark.length}
+              </h2>
             </div>
 
             {bookmark.map((book) => {

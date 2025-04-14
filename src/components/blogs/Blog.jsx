@@ -2,8 +2,16 @@ import React from "react";
 import { FaBookmark } from "react-icons/fa";
 
 const Blog = ({ blog, handleBookmark, handleRemainingTime }) => {
-  
-  const { id, author, author_img, cover, hashtags, title, posted_date, reading_time } = blog;
+  const {
+    id,
+    author,
+    author_img,
+    cover,
+    hashtags,
+    title,
+    posted_date,
+    reading_time,
+  } = blog;
 
   return (
     <div className="flex">
@@ -37,7 +45,12 @@ const Blog = ({ blog, handleBookmark, handleRemainingTime }) => {
             </button>
           </div>
           <div className="flex justify-end mt-2">
-            <button onClick={()=>handleRemainingTime(reading_time, id)} className="btn btn-primary btn-soft">Mark as Rad</button>
+            <button
+              onClick={() => handleRemainingTime(reading_time, id)}
+              className="btn btn-primary btn-soft"
+            >
+              Mark as Rad
+            </button>
           </div>
         </div>
       </div>
