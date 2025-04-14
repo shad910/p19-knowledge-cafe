@@ -4,23 +4,23 @@ const NavBar = () => {
   return (
     <div className="navbar w-11/12 mx-auto py-2.5 space-x-2.5">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Knowledge Cafe</a>
+        <a className="btn btn-ghost text-2xl font-bold">Knowledge Cafe</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-lg">
           <li>
-            <a>Item 1</a>
+            <a>Home</a>
           </li>
           <li>
-            <a>Item 2</a>
+            <a>Blogs</a>
           </li>
           <li>
-            <a>Item 3</a>
+            <a>Contact</a>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn hidden lg:flex">Button</a>
+        <a className="btn btn-primary hidden lg:flex">Sign Up</a>
         <div className="dropdown dropdown-end lg:hidden">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
@@ -44,14 +44,14 @@ const NavBar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>Blogs</a>
+          </li>
+          <li>
+            <a>Contact</a>
+          </li>
           </ul>
         </div>
       </div>

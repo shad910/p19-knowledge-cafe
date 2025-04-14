@@ -6,8 +6,8 @@ const Blog = ({ blog, handleBookmark, handleRemainingTime }) => {
   const { id, author, author_img, cover, hashtags, title, posted_date, reading_time } = blog;
 
   return (
-    <div>
-      <div className="card bg-base-100 shadow-sm">
+    <div className="flex">
+      <div className="card bg-base-100 shadow-sm flex-1">
         <figure>
           <img src={cover} alt="Shoes" />
         </figure>
